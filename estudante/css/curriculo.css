@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+section{
+    /*position:inherit;*/
+    position:initial;
+    top: 70px;
+    left: 250px;
+    width: 100%;
+    height: 1000px;
+    background-color: #F5EEEE;
+    overflow-x: hidden;
+}
+
+.curriculo .cabecalho{
+    position: relative;
+    /*background-color: rgb(165, 162, 162);*/
+    color: #004D13;
+    top: 70px;
+    left: 250px;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.curriculo .cabecalho h1{
+    padding-bottom: 10px;
+    font-size: 26px;
+}
+
+.curriculo .cabecalho p{
+    padding-bottom: 6px;
+    font-size: 16px;
+}
+
+.conteudo{
+    position: relative;
+    background-color: rgb(0, 255, 34);
+    color: #004D13;
+    top: 70px;
+    left: 250px;
+    width: 100%;
+    height: auto;
+    
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.conteudo .topico{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.linha{
+    margin-top: 5px;
+    width: 75%;
+    border: 0.5px solid rgba(0, 77, 19, 0.5);
+    margin-bottom: 20px;
+}
+
+.conteudo .info{
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+
+.info span{
+    width: 5px;
+    height: 5px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
