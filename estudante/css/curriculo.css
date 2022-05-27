@@ -107,33 +107,39 @@
 .imprimir{
     width: 250px;
     height: 60px;
-    
     float: right;
+}
+
+.imprimir_bnt svg{
+    padding-right: 10px;
+    width: 21px;
+    height: 21px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    stroke: #AD4147;
 }
 
 .imprimir .imprimir_bnt{
     background: #AD4147;
     text-decoration: none;
-    border-radius: 40px;
+    border-radius: 50px;
     font-size: 15px;
     
-    width: 100px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 
     text-align: center;
     color: #ffffff;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     float: right;
 
     position:fixed;
-    right: 10px;
-    left: 89%;
-    bottom: 50px;
+    right: 5px;
+    left: 93%;
+    bottom: 20px;
 
     transition: 0.5s;
 }
@@ -142,6 +148,12 @@
     background: #F5EEEE;
     color: #AD4147;
 }
+
+.imprimir_bnt svg:hover{
+    stroke: #AD4147;
+}
+
+
 
 .info-rodape{
     font-size: 10px;
@@ -172,4 +184,3 @@
     padding-left: 40px;
     padding-bottom: 20px;
 }
-

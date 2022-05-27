@@ -8,19 +8,21 @@
     <link rel="shortcut icon" href="./icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/curriculo.css">
+    <link rel="stylesheet" href="./css/print-curriculo.css">
 </head>
 <body>
 
+    <div>
     <!--header inicial-->
     <header>
-        <div class="left">
+        <div class="left no-print">
             <h3>Estágio na <span>Hora</span></h3>
         </div>
     </header>
     <!--header final-->
 
     <!--menu inicial-->
-    <div class="menu">
+    <div class="menu no-print">
         <div id="center">
             <img src="./imagens/estagio_em_emprego_fixo.jpg" class="image" alt="">
             <h2>Estudante</h2>
@@ -33,11 +35,17 @@
         </a>
 
         <a href="./area-do-estudante-curriculo.html" id="curriculo" class="secao" aria-checked="true" onclick="mudarCor(curriculo)">
+
         <svg id='svg_curriculo' width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+
         <path d="M29.5609 4.16669H12.8942C11.7891 4.16669 10.7293 4.60567 9.94793 5.38708C9.16653 6.16848 8.72754 7.22829 8.72754 8.33335V41.6667C8.72754 42.7718 9.16653 43.8316 9.94793 44.613C10.7293 45.3944 11.7891 45.8334 12.8942 45.8334H37.8942C38.9993 45.8334 40.0591 45.3944 40.8405 44.613C41.6219 43.8316 42.0609 42.7718 42.0609 41.6667V16.6667L29.5609 4.16669Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
         <path d="M29.5605 4.16669V16.6667H42.0605" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
         <path d="M33.7272 27.0834H17.0605" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
         <path d="M33.7272 35.4166H17.0605" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
         <path d="M21.2272 18.75H19.1439H17.0605" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span>Currículo</span>
@@ -70,7 +78,6 @@
             <a href="#" class="sair_btn">Sair</a>
         </div>
         
-
     </div>
     <!--menu final-->
 
@@ -80,7 +87,7 @@
         <!--curriculo inicial-->
         <section id="curriculo2">
             <div class="cabecalho">
-                <h1><span id="nome">Rafael</span><span id="sobrenome">da Conceição Lima</span></h1>
+                <h1><span id="nome">Nome</span> <span id="sobrenome">do Estudante</span></h1>
                 <h5><span id="nacionalidade">Brasileiro</span>, <span id="estado-civil">solteiro</span>, <span id="idade">18 anos</span></h5>
                 <h5>
                     <div id="endereco">
@@ -108,10 +115,10 @@
                     </span>
                     <span class="nivel">Técnico</span>
                     <span class="curso">Integrado ao Ensino Médio em Informática para Internet</span>,
-                    <span class="instituicao">Instituto Federal de Alagoas</span>,
-                    <span class="sigla-instituicao">IFAL</span>,
-                    <span id="municipio">Viçosa</span>,
-                    <span id="estado">AL</span>,
+                    <span class="instituicao">Instituto Web Front</span>,
+                    <span class="sigla-instituicao">IWF</span>,
+                    <span id="municipio">Web</span>,
+                    <span id="estado">MN</span>,
                     <span id="pais-instituicao">Brasil</span></span>.
                 </p>
 
@@ -122,10 +129,10 @@
                     </span>
                     <span id="nivel"></span>
                     <span id="curso">Ensino Médio</span>,
-                    <span class="instituicao">Instituto Federal de Alagoas</span>,
-                    <span id="sigla-instituicao">IFAL</span>,
-                    <span id="municipio">Viçosa</span>,
-                    <span id="estado">AL</span>,
+                    <span class="instituicao">Instituto Web Front</span>,
+                    <span id="sigla-instituicao">IWF</span>,
+                    <span id="municipio">Web</span>,
+                    <span id="estado">MN</span>,
                     <span id="pais-instituicao">Brasil</span></span>.
                 </p>
 
@@ -136,10 +143,10 @@
                     </span>
                     <span id="nivel"></span>
                     <span id="curso">Ensino Fundamental</span>,
-                    <span class="instituicao">Escola Municipal Professor Orlando Lins</span>,
-                    <span id="sigla-instituicao">EMPOL</span>,
-                    <span id="municipio">Mar Vermelho</span>,
-                    <span id="estado">AL</span>,
+                    <span class="instituicao">Instituto Web Front</span>,
+                    <span id="sigla-instituicao">IWF</span>,
+                    <span id="municipio">Web</span>,
+                    <span id="estado">MN</span>,
                     <span id="pais-instituicao">Brasil</span></span>.
                 </p>
 
@@ -152,14 +159,14 @@
                     <span class="marcador">-</span>
                     <span class="periodoLocal">
                         <span class="periodo"><span class="inicio">2019</span> - <span class="termino">2019</span></span>
-                        <span class="local">Instituto Federal de Alagoas (IFAL) - Campus Viçosa</span>,
-                        <span id="municipio">Viçosa</span>,
-                        <span id="estado">AL</span>,
+                        <span class="local">Instituto Web Front</span>,
+                        <span id="municipio">Web</span>,
+                        <span id="estado">MN</span>,
                         <span id="pais-instituicao">Brasil</span></span>.
                     </span>.
                     <span class="funcao">
                         <span class="cargo">Cargo:</span>
-                        <span class="nomeCargo">Monitor de Introdução a Programação</span>.
+                        <span class="nomeCargo">Monitor de Front-End</span>.
                     </span>
                 </p>
 
@@ -167,9 +174,9 @@
                     <span class="marcador">-</span>
                     <span class="periodoLocal">
                         <span class="periodo"><span class="inicio">2020</span> - <span class="termino">2020</span></span>
-                        <span class="local">Colégio Barão de Viçosa</span>,
-                        <span id="municipio">Viçosa</span>,
-                        <span id="estado">AL</span>,
+                        <span class="local">Colégio Web Front</span>,
+                        <span id="municipio">Web</span>,
+                        <span id="estado">MN</span>,
                         <span id="pais-instituicao">Brasil</span></span>.
                     </span>
                     <span class="funcao">
@@ -186,7 +193,7 @@
                     <span class="marcador">-</span>
                     <span class="nomeCurso">Manutenção de Computadores</span>,
                     <span class="qntHora">100h</span>,
-                    <span class="instituicao">IFAL</span>
+                    <span class="instituicao">IWF</span>
                     (<span class="ano">2018</span>).
                 </p>
 
@@ -228,13 +235,26 @@
         </section>
         <!--curriculo final-->
 
-        <div class="imprimir">
-            <a href="#" class="imprimir_bnt" onclick="imprimir()">Imprimir</a>
+        <div class="imprimir no-print">
+
+            <a href="#" class="imprimir_bnt" onclick="imprimir()">
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <path d="M35 25V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <path d="M11.6665 16.6666L19.9998 25L28.3332 16.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <path d="M20 25V5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            </a>
         </div>
 
     </div>
     <!--curriculoVittae final-->
-
+    </div>
+    
     <script src="./js/menu.js"></script>
     <script src="./js/curriculo.js"></script>
     

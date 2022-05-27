@@ -1,0 +1,28 @@
+
+.only-print{
+    display: none;
+}
+
+@media print{
+
+    #curriculoVittae{
+        left: 0;
+        right: 50%;
+        margin-left: 0;
+        padding-left: 0;
+        width: auto;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .no-print{
+        display: none;
+    }
+
+    .only-print{
+        display: block;
+    }
+}
