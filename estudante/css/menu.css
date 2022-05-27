@@ -16,8 +16,7 @@ header{
 }
 
 .left h3{
-    color: #F5EEEE;
-    margin: 0;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 800;
@@ -38,7 +37,9 @@ header{
 }
 
 #center{
+    /*background-color: aqua;*/
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .menu .image{
@@ -48,16 +49,16 @@ header{
 }
 
 .menu h2{
-    color: #F5EEEE;
+    color: #ffffff;
     margin-top: 0;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .menu .secao{
     color: #F5EEEE;
     display: block;
     width: 100%;
-    line-height: 60px;
+    line-height: 58px;
     text-decoration: none;
     padding-left: 40px;
     box-sizing: border-box;
@@ -79,10 +80,13 @@ header{
 }
 
 path{
-    stroke: #F5EEEE;
+    stroke: #ffffff;
 }
 
 .rigth {
+    /*background-color: #c7000a;*/
+    width: 250px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +109,10 @@ path{
     align-items: center;
     justify-content: center;
 
-    margin-top: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    transition: 0.5s;
 }
 
 .rigth .sair_btn:hover{
