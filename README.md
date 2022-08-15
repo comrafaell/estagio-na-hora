@@ -8,10 +8,5 @@ Durante meu curso de TÉCNICO INTEGRADO AO ENSINO MÉDIO EM INFORMÁTICA PARA IN
 
 Este projeto tem o intuito de praticar habilidades com HTML e CSS. No momento, essa parte do sistema é focado na perspectiva do Estudante.
 
-O menu lateral foi desenvolvido com o vídeo: 
-FONT. Aprenda a fazer um menu lateral [HTML & CSS]. Youtube, 17 de outubro de 2021. Disponível em: https://www.youtube.com/watch?v=SZB6gMaaV84&t=783s. Acesso em: 25 de maio de 2022.
-
-Obrigado FONT.
-
 Att Rafael Lima.
 25 de maio de 2022.
