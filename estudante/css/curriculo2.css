@@ -90,6 +90,10 @@
     font-weight: bold;
 }
 
+.cv-cursos .situacao {
+    font-weight: bold;
+}
+
 
 .bnt-imprimir {
     display: flex;
