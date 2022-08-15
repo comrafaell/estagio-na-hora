@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    grid-area: cabecalho;
+    background-color: #48975d;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    grid-area: conteudo;
+    background-color: #F5EEEE;
+    width: 100%;
+}
+
+aside {
+    grid-area: menu-links;
+    background-color: #397D4B;
+    position: fixed;
+    top: 64px;
+    width: 245px;
+}
+
+footer {
+    grid-area: rodape;
+    background-color: #F5EEEE;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 245px 1fr;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-areas:
+        'cabecalho cabecalho'
+        'menu-links conteudo'
+        'menu-links rodape';
+}
+
+.logo h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo span{
+    color: #c7000a;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    padding: 15px 60px;
+}
+
+footer .logo h3 {
+    color: #48975d;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800
+}
+
+footer .logo span{
+    color: #c7000a;
+}
+
+@media print {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        grid-template-areas:
+            'cabecalho cabecalho'
+            'conteudo conteudo'
+            'rodape rodape';
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        height: 0;
+    }
+
+
+}

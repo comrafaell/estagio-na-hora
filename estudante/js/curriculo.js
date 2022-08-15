@@ -1,1 +1,3 @@
-
+function imprimir() {
+    window.print()
+}
