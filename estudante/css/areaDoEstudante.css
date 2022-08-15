@@ -25,6 +25,7 @@ aside {
     position: fixed;
     top: 64px;
     width: 245px;
+    height: 100%;
 }
 
 footer {
@@ -79,9 +80,13 @@ footer .logo span{
 
     body {
         grid-template-areas:
-            'cabecalho cabecalho'
+            'conteudo conteudo'
             'conteudo conteudo'
             'rodape rodape';
+    }
+
+    main {
+        display: block;
     }
 
     aside {
@@ -89,7 +94,7 @@ footer .logo span{
     }
 
     header {
-        height: 0;
+        display: none;
     }
 
 

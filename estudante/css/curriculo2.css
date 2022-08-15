@@ -4,25 +4,32 @@
     padding: 30px 60px;
 }
 
-.cv-cabecalho {
-    padding-bottom: 15px;
-}
-
-.cv-cabecalho h5 {
-    font-size: 2em;
-}
-
-.cv-cabecalho h5 {
-    font-size: 1em;
-    padding-top: 5px;
-}
-
 .curriculo h2 {
     font-size: 1.2em;
     text-transform: uppercase;
     padding: 5px 0;
     border-bottom: solid 2px rgb(117, 117, 117);
 }
+
+
+.cv-cabecalho {
+    padding-bottom: 15px;
+}
+
+.cv-cabecalho h1 {
+    font-size: 2em;
+}
+
+.cv-cabecalho h5 {
+    font-size: 1em;
+    font-weight: normal;
+    padding-top: 5px;
+}
+
+.cv-cabecalho a {
+    color: blue;
+}
+
 
 .cv-objetivo p {
     font-size: 0.9em;
@@ -51,7 +58,6 @@
 .cv-profissional ul {
     padding-left: 20px;
     padding-bottom: 15px;
-
 }
 
 .cv-profissional li {
@@ -65,8 +71,6 @@
 .cv-profissional .periodo {
     font-weight: bold;
 }
-
-
 
 
 .cv-cursos ul {
