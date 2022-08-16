@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/curriculo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="curriculo">
+
+        <!-- Cabeçalho -->
+        <div class="cv-cabecalho">
+            <h1><span id="nome">Rafael</span> <span id="sobrenome">Lima</span></h1>
+            <h5><span id="nacionalidade">Brasileiro</span>, <span id="estado-civil">solteiro</span>, <span id="idade">20 anos</span></h5>
+            <h5>
+                <div id="endereco">
+                    <span id="bairro">Centro</span>,
+                    <span id="municipio">Mar Vermelho</span>, 
+                    <span id="estado">Alagoas</span>
+                </div>
+            </h5>
+            <h5>Telefone: <span id="telefone">(82) 99190-5624</span> | E-mail: <a href="mailto:" id="email">rafael.lima.mv@gmail.com</a></h5>
+            <h5>Linkedin: <a href="http://www.linkedin.com/in/comrafaellima/" target="_blank">www.linkedin.com/in/comrafaellima/</a></h5>
+        </div>
+        <!-- Cabeçalho -->
+
+        <!-- Objetivo -->
+        <div class="cv-objetivo">
+            <h2>Objetivo</h2>
+            <p>Cargo: Desenvolvedor Front-End Junior. Áreas de interesse: Tecnologia da informação, desenvolvimento Front-End.</p>
+        </div>
+        <!-- Objetivo -->
+
+        <!-- Formação Acâdemica -->
+        <div class="cv-academico">
+            <h2>Formação Acâdemica</h2>
+
+            <ul>
+                <li>
+                    <p>
+                        <span class="curso">Técnico Integrado ao Ensino Médio em Informática para Internet</span>, 
+                        <span class="ano-fim">2022</span>.
+                    </p>
+                    <p>
+                        <span class="instituicao">Instituto Federal de Alagoas - Campus Viçosa</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="curso">Ensino Médio Completo</span>, 
+                        <span class="ano-fim">2022</span>.
+                    </p>
+                    <p>
+                        <span class="instituicao">Instituto Federal de Alagoas - Campus Viçosa</span>.
+                    </p>
+                </li>
+            </ul>
+            
+        
+        </div>
+        <!-- Formação Acâdemica -->
+
+        <!-- Experiência Profissional -->
+        <div class="cv-profissional">
+            <h2>Experiência Profissional</h2>
+            
+            <ul>
+                <li>
+                
+                    <p class="periodo">
+                        <span class="inicio">2020</span> - <span class="termino">2020</span></span>
+                    </p>
+                    
+                    <p class="local">Indústria do Conhecimento (SESI) - Unidade de Mar Vermelho - AL</p>
+
+                    <p>
+                        <span class="cargo">Cargo:</span>
+                        <span class="nomeCargo">Monitor de Informática</span>.
+                    </p>
+
+                    <p>
+                        <span class="atividades">Principais atividades</span>:
+                        <span class="descAtividade">Controle de acessos, gestão de acervo, auxílio a professores e alunos</span>.
+                    </p>
+                
+                </li>
+            </ul>
+        </div>
+        <!-- Experiência Profissional -->
+
+        <!-- Cursos -->
+        <div class="cv-cursos">
+            <h2>Cursos</h2>
+
+            <ul>
+
+                <li>
+                    <p>
+                        <span class="ano">2022</span> - 
+                        <span class="curso">Curso Web Moderno Completo com JavaScript 2022 + Projetos</span> - 
+                        <span class="instituicao">Udemy</span> - 
+                        <span class="qntHoras">97</span> horas.
+                        <span class="situacao">Cursando</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="ano">2019</span> - 
+                        <span class="curso">Curso Sebrae Experience</span> - 
+                        <span class="instituicao">Sebrae</span> - 
+                        <span class="qntHoras">18</span> horas.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="ano">2013</span> - 
+                        <span class="curso"> Curso Básico de Informática, Módulo Windows, Word, Excel e Internet</span> - 
+                        <span class="instituicao">SESI</span> - 
+                        <span class="qntHoras">40</span> horas.
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Cursos -->
+
+    </div>
+    <!-- Currículo -->
+
+    <a href wm-nav="paginas/curriculo.js" onclick="imprimir()" class="bnt-imprimir destaque">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M35 25V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.6665 16.6666L19.9998 25L28.3332 16.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 25V5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+
+    <script>
+        function imprimir() {
+        let nome = document.getElementById('nome').innerHTML
+        let sobrenome = document.getElementById('sobrenome').innerHTML
+
+        document.title = `${nome.toLowerCase()}_${sobrenome.toLowerCase()}_curriculo`;
+        window.print()
+    }
+    </script>
+
+    <script src="js/curriculo.js"></script>
+</body>
+</html>

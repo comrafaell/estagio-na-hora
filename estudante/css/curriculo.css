@@ -1,186 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-#curriculoVittae{
-    /*position:inherit;*/
-    position:initial;
-    top: 70px;
-    left: 250px;
-    width: 100%;
-    min-height: auto;
-    max-height: auto;
-    background-color: #ffffff;
-    overflow-x: hidden;
-    overflow-y: hidden;
+.curriculo {
+    padding: 30px 60px;
 }
 
-#curriculoVittae .cabecalho{
-    /*background-color: rgb(165, 162, 162);*/
-    position: relative;
-    color: #004D13;
-    top: 70px;
-    left: 250px;
-    width: 100%;
-    height: 133px;
-    margin-top: 30px;
-    padding-left: 40px;
-    padding-bottom: 20px;
-}
-
-#curriculoVittae .cabecalho h1{
-    padding-bottom: 14px;
-    font-size: 26px;
-}
-
-#curriculoVittae .cabecalho h5{
-    padding-bottom: 5px;
-    font-size: 13px;
-    
-}
-
-#curriculoVittae .conteudo{
-    /*background-color: rgb(0, 255, 34);*/
-    position:relative;
-    color: #004D13;
-    top: 70px;
-    left: 250px;
-    width: 100%;
-    height: auto;
-    
-    padding-left: 40px;
-    padding-bottom: 20px;
-}
-
-.conteudo .topico1{
-    font-size: 13px;
+.curriculo h2 {
+    font-size: 1.2em;
     text-transform: uppercase;
-    font-weight: 600;
-}
-
-.conteudo .topico2{
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.linha{
-    margin-top: 5px;
-    width: 75%;
-    border: 0.5px solid rgba(0, 77, 19, 0.5);
-    margin-bottom: 20px;
-}
-
-#curriculoVittae .conteudo .info{
-    font-size: 13px;
-    font-weight: 600;
-    margin-left: 15px;
-    padding-bottom: 5px;
-    margin-top: 10px;
-    display:block
-}
-
-#curriculoVittae .conteudo .info .periodo{
-    font-weight: 800;
-}
-
-.funcao{
-    display:flex;
-    margin-top: 5px;
-    font-weight: 600;
-}
-.cargo{
-    margin-right: 5px;
-    
-}
-
-.marcador{
-    margin-right: 5px;
-}
-
-#curriculoVittae{
-    margin: 0;
-    padding: 0;
+    padding: 5px 0;
+    border-bottom: solid 2px rgb(117, 117, 117);
 }
 
 
-
-.imprimir{
-    width: 250px;
-    height: 60px;
-    float: right;
-}
-
-.imprimir_bnt svg{
-    padding-right: 10px;
-    width: 21px;
-    height: 21px;
-    padding-top: 15px;
+.cv-cabecalho {
     padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    stroke: #AD4147;
 }
 
-.imprimir .imprimir_bnt{
-    background: #AD4147;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 15px;
-    
+.cv-cabecalho h1 {
+    font-size: 2em;
+}
+
+.cv-cabecalho h5 {
+    font-size: 1em;
+    font-weight: normal;
+    padding-top: 5px;
+}
+
+.cv-cabecalho a {
+    color: blue;
+}
+
+
+.cv-objetivo p {
+    font-size: 0.9em;
+    padding: 15px 0;
+}
+
+
+.cv-academico ul {
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.cv-academico li {
+    padding-top: 15px;
+}
+
+.cv-academico li p {
+    padding-top: 5px;
+}
+
+.cv-academico .curso, .ano-fim {
+    font-weight: bold;
+}
+
+
+.cv-profissional ul {
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.cv-profissional li {
+    padding-top: 10px;
+}
+
+.cv-profissional li p {
+    padding-top: 5px;
+}
+
+.cv-profissional .periodo {
+    font-weight: bold;
+}
+
+
+.cv-cursos ul {
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.cv-cursos li {
+    padding-top: 10px;
+}
+
+.cv-cursos li p {
+    padding-top: 5px;
+}
+
+.cv-cursos .ano {
+    font-weight: bold;
+}
+
+.cv-cursos .situacao {
+    font-weight: bold;
+}
+
+
+.bnt-imprimir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 50px;
-
-    text-align: center;
-    color: #ffffff;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-
+    border-radius: 60px;
     float: right;
-
     position:fixed;
     right: 5px;
     left: 93%;
     bottom: 20px;
-
-    transition: 0.5s;
 }
 
-.imprimir_bnt:hover{
-    background: #F5EEEE;
-    color: #AD4147;
-}
-
-.imprimir_bnt svg:hover{
-    stroke: #AD4147;
+.bnt-imprimir svg {
+    width: 21px;
+    height: 21px;
 }
 
 
 
-.info-rodape{
-    font-size: 10px;
-    font-weight: 600;
+
+@media print {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        grid-template-areas:
+            'conteudo conteudo'
+            'conteudo conteudo'
+            'rodape rodape';
+    }
+
+    main {
+        display: block;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer .logo {
+        display: inline;
+    }
+
+    footer .logo p {
+        display: inline;
+    }
+
+    .curriculo {
+        font-size: 15px;
+        padding: 30px 60px
+    }
 }
 
-.logo-rodape h3{
-    color: #48975d;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 800;
-}
+@media (max-width: 770px) {
+    .bnt-imprimir {
+        display: none;
+    }
 
-.logo-rodape span{
-    color: #c7000a;
-}
-
-.curriculo-rodape{
-    /*background-color: rgb(137, 110, 161);*/
-
-    position:relative;
-    color: #004D13;
-    top: 70px;
-    left: 250px;
-    width: 100%;
-    height: 100%;
-    
-    padding-left: 40px;
-    padding-bottom: 20px;
+    .curriculo {
+        font-size: 13px;
+        padding: 30px 30px;
+    }
 }

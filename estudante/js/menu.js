@@ -1,9 +1,35 @@
-window.onhashchange = function(e) {
-    const oldURL = e.oldURL.split('#')[1]
-    const newURL = e.newURL.split('#')[1]
-    console.log(oldURL, newURL)
-    const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
-    const newLink = document.querySelector(`.menu a[href='#${newURL}']`)
-    oldLink && oldLink.classList.remove('selected')
-    newLink && newLink.classList.add('selected')
+function marcarBotao() {
+    let buttons = document.querySelectorAll('[wm-nav]')
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttons.forEach(bnt => bnt.classList.remove('selected'))
+            this.classList.add('selected')
+        })
+    })
+    
+    abrirPagina()
 }
+
+
+function abrirPagina() {
+    document.querySelectorAll('[wm-nav]').forEach(link => {
+        const conteudo = document.getElementById('conteudo')
+        link.onclick = function(evento) {
+            evento.preventDefault()
+            fetch(link.getAttribute('wm-nav'))
+                .then(resp => resp.text())
+                .then(html => conteudo.innerHTML = html)
+        }
+    })
+}
+
+marcarBotao()
+
+
+
+
+
+
+
+
+
