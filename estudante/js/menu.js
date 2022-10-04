@@ -1,29 +1,27 @@
-function marcarBotao() {
-    let buttons = document.querySelectorAll('[wm-nav]')
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            buttons.forEach(bnt => bnt.classList.remove('selected'))
-            this.classList.add('selected')
-        })
-    })
-    
-    abrirPagina()
-}
+const menu_toggle = document.querySelector('.menu-toggle')
+const navigation = document.querySelector('.navigation')
+const conteudo = document.querySelector('.conteudo')
+const rodape = document.querySelector('.rodape')
+
+menu_toggle.onclick = function() {
+    navigation.classList.toggle('active')
+
+    if(navigation.classList[1] === 'active') {
+        navigation.style.width = '245px'
+        conteudo.style.width = '1fr'
+        rodape.style.width = '100%'
+        console.log('Ativado')
+    } else {
+        navigation.style.width = '80px'
+        conteudo.style.width = '1fr'
+        rodape.style.width = '100%'
+        console.log('Desativado')
+    }
+} 
 
 
-function abrirPagina() {
-    document.querySelectorAll('[wm-nav]').forEach(link => {
-        const conteudo = document.getElementById('conteudo')
-        link.onclick = function(evento) {
-            evento.preventDefault()
-            fetch(link.getAttribute('wm-nav'))
-                .then(resp => resp.text())
-                .then(html => conteudo.innerHTML = html)
-        }
-    })
-}
 
-marcarBotao()
+
 
 
 

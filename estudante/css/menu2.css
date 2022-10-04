@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
- 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
 }
 
 .navigation {
@@ -12,13 +19,15 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    border-radius: 10px;
     box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.05);
     transition: 0.5s;
     overflow: hidden;    
 }
 
 .navigation.active {
-    width: 245px;
+    width: 400px;
+
 }
 
 .menu-toggle {
@@ -121,6 +130,7 @@
     border-radius: 10px;
 }
 
+
 .navigation .menu li a:hover {
     background-color: #0084ff;
     color: #fff;
@@ -133,7 +143,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .navigation .menu li a .text {
@@ -143,5 +153,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: 1.25em;
 }

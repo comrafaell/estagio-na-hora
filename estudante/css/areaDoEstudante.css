@@ -7,108 +7,40 @@
 
 header {
     grid-area: cabecalho;
-    background-color: #48975d;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 main {
     grid-area: conteudo;
-    background-color: #F5EEEE;
-    width: 100%;
+    background-color: blueviolet;
 }
 
 aside {
     grid-area: menu-links;
-    background-color: #397D4B;
-    position: fixed;
-    top: 64px;
-    width: 245px;
-    height: 100%;
+    background-color: brown;
 }
 
 footer {
     grid-area: rodape;
-    background-color: #F5EEEE;
+    background-color: burlywood;
 }
 
 body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: 245px 1fr;
-    grid-template-rows: 60px 1fr 60px;
+    grid-template-rows: 70px 1fr 70px;
     grid-template-areas:
-        'cabecalho cabecalho'
+        'menu-links cabecalho'
         'menu-links conteudo'
         'menu-links rodape';
-}
-
-.bnt-voltar {
-    display: none;
-}
-
-.logo h3{
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-
-.logo span{
-    color: #c7000a;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-footer {
-    padding: 15px 60px;
-}
-
-footer .logo h3 {
-    color: #48975d;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-footer .logo h3 span{
-    color: #c7000a;
-}
-
-footer .logo p {
-    display: none;
+    background-color: aqua;
 }
 
 
 
-@media (max-width: 770px) {
-    body {
-        grid-template-areas:
-        'cabecalho cabecalho'
-        'conteudo conteudo'
-        'rodape rodape';
-    }
 
-    aside {
-        display: none;
-    }
 
-    header .bnt-voltar {
-        display: flex;
-        margin-left: 30px;
-    }
-
-    header .logo h3 {
-        font-size: 15px;
-    }
-}
 
 
 
