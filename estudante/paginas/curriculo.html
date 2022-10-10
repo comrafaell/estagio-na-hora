@@ -1,222 +1,164 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudante | Currículo</title>
-    <link rel="stylesheet" href="/bootstrap.min.css">
-    <script src="/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/areaDoEstudante.css">
-    <link rel="stylesheet" href="./css/curriculo.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    
-</head>
-<body>
-    <header class="cabecalho">
-        <div class="bnt-voltar">
-            <a href="">
-                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.41089 18.9844L15.6849 12.6562L9.41089 6.32812" stroke="#F5EEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-        </div>
+<div class="container-fluid">
+    <div class="col">
+        <div class="row-2 pt-3">
 
-        <div class="logo">
-            <h3>Estágio na <span>Hora</span></h3>
-        </div>
-    </header>
-
-    <main id="conteudo">
-        <div class="curriculo">
-            <!-- Cabeçalho -->
-            <div class="cv-cabecalho">
-                <h1><span id="nome">Rafael</span> <span id="sobrenome">Lima</span></h1>
-                <h5><span id="nacionalidade">Brasileiro</span>, <span id="estado-civil">solteiro</span>, <span id="idade">20 anos</span></h5>
-                <h5>
-                    <div id="endereco">
-                        <span id="bairro">Centro</span>,
-                        <span id="municipio">Mar Vermelho</span>, 
-                        <span id="estado">Alagoas</span>
-                    </div>
-                </h5>
-                <h5>Telefone: <span id="telefone">(82) 99190-5624</span> | E-mail: <a href="mailto:" id="email">rafael.lima.mv@gmail.com</a></h5>
-                <h5>Linkedin: <a href="http://www.linkedin.com/in/comrafaellima/" target="_blank">www.linkedin.com/in/comrafaellima/</a></h5>
-            </div>
-            <!-- Cabeçalho -->
-    
-            <!-- Objetivo -->
-            <div class="cv-objetivo">
-                <h2>Objetivo</h2>
-                <p>Cargo: Desenvolvedor Front-End Junior. Áreas de interesse: Tecnologia da informação, desenvolvimento Front-End.</p>
-            </div>
-            <!-- Objetivo -->
-    
-            <!-- Formação Acâdemica -->
-            <div class="cv-academico">
-                <h2>Formação Acâdemica</h2>
-    
-                <ul>
-                    <li>
-                        <p>
-                            <span class="curso">Técnico Integrado ao Ensino Médio em Informática para Internet</span>, 
-                            <span class="ano-fim">2022</span>.
-                        </p>
-                        <p>
-                            <span class="instituicao">Instituto Federal de Alagoas - Campus Viçosa</span>.
-                        </p>
-                    </li>
-    
-                    <li>
-                        <p>
-                            <span class="curso">Ensino Médio Completo</span>, 
-                            <span class="ano-fim">2022</span>.
-                        </p>
-                        <p>
-                            <span class="instituicao">Instituto Federal de Alagoas - Campus Viçosa</span>.
-                        </p>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-10 col-xl-11">
+                    <h1 class="fs-2">
+                        <span id="nome">Rafael</span> <span id="sobrenome">Lima</span>
+                    </h1>
+                </div>
                 
+                <div class="col-2 col-xl-1 d-flex justify-content-end">
+                    <button class="d-print-none btn btn-danger" onclick="imprimir()">
+                        <i class="bi bi-download"></i>
+                    </button>
+                </div>
+            </div>
             
-            </div>
-            <!-- Formação Acâdemica -->
-    
-            <!-- Experiência Profissional -->
-            <div class="cv-profissional">
-                <h2>Experiência Profissional</h2>
-                
-                <ul>
-                    <li>
-                    
-                        <p class="periodo">
-                            <span class="inicio">2020</span> - <span class="termino">2020</span></span>
-                        </p>
-                        
-                        <p class="local">Indústria do Conhecimento (SESI) - Unidade de Mar Vermelho - AL</p>
-    
-                        <p>
-                            <span class="cargo">Cargo:</span>
-                            <span class="nomeCargo">Monitor de Informática</span>.
-                        </p>
-    
-                        <p>
-                            <span class="atividades">Principais atividades</span>:
-                            <span class="descAtividade">Controle de acessos, gestão de acervo, auxílio a professores e alunos</span>.
-                        </p>
-                    
-                    </li>
-                </ul>
-            </div>
-            <!-- Experiência Profissional -->
-    
-            <!-- Cursos -->
-            <div class="cv-cursos">
-                <h2>Cursos</h2>
-    
-                <ul>
-    
-                    <li>
-                        <p>
-                            <span class="ano">2022</span> - 
-                            <span class="curso">Curso Web Moderno Completo com JavaScript 2022 + Projetos</span> - 
-                            <span class="instituicao">Udemy</span> - 
-                            <span class="qntHoras">97</span> horas.
-                            <span class="situacao">Cursando</span>.
-                        </p>
-                    </li>
-    
-                    <li>
-                        <p>
-                            <span class="ano">2019</span> - 
-                            <span class="curso">Curso Sebrae Experience</span> - 
-                            <span class="instituicao">Sebrae</span> - 
-                            <span class="qntHoras">18</span> horas.
-                        </p>
-                    </li>
-    
-                    <li>
-                        <p>
-                            <span class="ano">2013</span> - 
-                            <span class="curso"> Curso Básico de Informática, Módulo Windows, Word, Excel e Internet</span> - 
-                            <span class="instituicao">SESI</span> - 
-                            <span class="qntHoras">40</span> horas.
-                        </p>
-                    </li>
-    
-                </ul>
-            </div>
-            <!-- Cursos -->
+            <p class="fs-6 m-0">
+                <span>Brasileiro</span>, 
+                <span>solteiro</span>, 
+                <span>20 anos</span>
+            </p>
+            <p class="fs-6 m-0">
+                <span>Centro</span>,
+                <span>Mar Vermelho</span>, 
+                <span>Alagoas</span>
+            </p>
+            <p class="fs-6 m-0">
+                <span>
+                    Telefone: <span>(82) 99190-5624</span>
+                </span>
+                |
+                <span>
+                    Email: <a href="mailto:" id="email">rafael.lima.mv@gmail.com</a>
+                </span>
+            </p>
+            <p class="fs-6">
+                Linkedin: <a href="http://www.linkedin.com/in/comrafaellima/" target="_blank">www.linkedin.com/in/comrafaellima/</a>
+            </p>
         </div>
-        <!-- Currículo -->
     
-        <a href onclick="imprimir()" class="bnt-imprimir destaque">
-            <ion-icon name="print-outline"></ion-icon>
-        </a>
-    </main>
-
-    <aside>
-        <div class="menu-toggle"></div>
-
-        <div class="profile">
-            <div class="imgBx">
-                <img src="" class="image" alt="Foto do perfil">
-            </div>
-            <h2>Estudante</h2>
+        <div class="row-2">
+            <h2 class="text-uppercase fs-6">Objetivo</h2>
+            <hr class="mt-0 pt-0">
+            <p class="fs-6">Cargo: Desenvolvedor Front-End Junior. Áreas de interesse: Tecnologia da informação, desenvolvimento Front-End.</p>
         </div>
+    
+        <div class="row-2">
+            <h2 class="text-uppercase fs-6">Formação Acâdemica</h2>
+            <hr class="mt-0 pt-0">
+    
+            <ul class="fs-6">
+                <li>
+                    <p class="m-0">
+                        <span>Técnico Integrado ao Ensino Médio em Informática para Internet</span>, 
+                        <span>2022</span>.
+                    </p>
+                    <p class="mt-0">
+                        <span>Instituto Federal de Alagoas - Campus Viçosa</span>.
+                    </p>
+                </li>
 
-        <nav class="menu">
-            <ul>
-                <li class="btn btn-success">
-                    <a href="meusDados.html">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <span class="text">Meus Dados</span>
-                    </a>
-                </li>
                 <li>
-                    <a href wm-nav="paginas/curriculo.html" class="selected">
-                        <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
-                        <span class="text">Currículo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href wm-nav="paginas/vagas.html">
-                        <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
-                        <span class="text">Vagas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href wm-nav="paginas/guia.html">
-                        <span class="icon"><ion-icon name="bookmark-outline"></ion-icon></span>
-                        <span class="text">Guia</span>
-                    </a>
-                </li>
-                <li>
-                    <a href wm-nav="paginas/notificacoes.html">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
-                        <span class="text">Notificações</span>
-                    </a>
-                </li>
-                <li>
-                    <a href wm-nav="#">
-                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                        <span class="text">Sair</span>
-                    </a>
+                    <p class="m-0">
+                        <span>Ensino Médio Completo</span>, 
+                        <span>2022</span>.
+                    </p>
+                    <p class="mt-0">
+                        <span>Instituto Federal de Alagoas - Campus Viçosa</span>.
+                    </p>
                 </li>
             </ul>
-        </nav>
-
-    </aside>
-
-    <footer>
-        <div class="logo">
-            <p>Currículo Vittae by</p><h3>Estágio na <span>Hora</span>&copy;2022</h3>
         </div>
-    </footer>
+    
+        <div class="row-2">
+            <h2 class="text-uppercase fs-6">Experiência Profissional</h2>
+            <hr class="mt-0 pt-0">
+                
+            <ul class="fs-6">
+                <li>
+                
+                    <p class="m-0">
+                        <span>2018</span> - <span>2020</span>
+                    </p>
+                    
+                    <p class="m-0">
+                        Indústria do Conhecimento (SESI) - Unidade de Mar Vermelho - AL
+                    </p>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/curriculo.js"></script>
-</body>
-</html>
+                    <p class="m-0">
+                        <span>Cargo:</span>
+                        <span>Monitor de Informática</span>.
+                    </p>
+
+                    <p>
+                        <span>Principais atividades</span>:
+                        <span>Controle de acessos, gestão de acervo, auxílio a professores e alunos</span>.
+                    </p>
+                
+                </li>
+            </ul>
+        </div>
+    
+        <div class="row-2">
+            <h2 class="text-uppercase fs-6">Cursos</h2>
+            <hr class="mt-0 pt-0">
+    
+            <ul class="fs-6">
+                <li>
+                    <p>
+                        <span>2022</span> - 
+                        <span>Curso Web Moderno Completo com JavaScript 2022 + Projetos</span> - 
+                        <span>Udemy</span> - 
+                        <span>97</span> horas.
+                        <span>Cursando</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span>2019</span> - 
+                        <span>Curso Sebrae Experience</span> - 
+                        <span>Sebrae</span> - 
+                        <span>18</span> horas.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span>2013</span> - 
+                        <span> Curso Básico de Informática, Módulo Windows, Word, Excel e Internet</span> - 
+                        <span>SESI</span> - 
+                        <span>40</span> horas.
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+    
+        <div class="row-2">
+            <h2 class="text-uppercase fs-6">Informações Adicionais</h2>
+            <hr class="mt-0 pt-0">
+                
+            <ul class="fs-6">
+                <li>
+                    <p>Conhecimentos avançados de informática (Pacote Office)</p>
+                </li>
+                <li>
+                    <p>Idiomas: Espanhol – Básico / Inglês – Básico.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-none d-print-block fs-6">
+            <p>Currículo Vittae by
+                <span class="text-uppercase fw-bold text-success">Estágio na <span class="text-danger">Hora</span></span>&copy;<span>2022</span>
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<script src="/js/curriculo.js"></script>
