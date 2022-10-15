@@ -1,5 +1,7 @@
 # Agente de Integração
 
+Repositório do projeto de agente de integração Estágio na Hora.
+
 Deploy: https://estagionahora.netlify.app/#/curriculo.html
 
 De modo geral, um agente de integração é uma entidade que trabalha de modo terceirizado, no âmbito de estágios. Ele é responsável por intermediar Estudante, Empresa e Instituição de Ensino. Muitas vezes, eles possuem um plataforma web afim de facilitar e agilizar durante o processo.
