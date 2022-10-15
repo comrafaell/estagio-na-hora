@@ -1,4 +1,4 @@
-# Agente de Integração
+# estagio-na-hora
 
 Repositório do projeto de agente de integração Estágio na Hora.
 
