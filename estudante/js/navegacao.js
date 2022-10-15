@@ -40,13 +40,6 @@
         }
     }
 
-    function mudarTitle() {
-        document.querySelectorAll('span [secao]')
-            .forEach(titulo => {
-                console.log(titulo)
-            })
-    }
-
     window.onhashchange = e => navegarViaAjax(location.hash)
     
     configurarLinks()
