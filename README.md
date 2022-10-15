@@ -1,6 +1,6 @@
-# estagio-na-hora
+# Estágio na Hora
 
-Repositório do projeto de agente de integração Estágio na Hora.
+Repositório do projeto de um agente de integração chamado Estágio na Hora.
 
 Deploy: https://estagionahora.netlify.app/#/curriculo.html
 
